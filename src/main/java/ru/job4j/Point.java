@@ -2,13 +2,7 @@ package ru.job4j;
 
 public class Point {
     public static double distance(int x1, int y1, int x2, int y2) {
-        double deltaX = x2 - x1;
-        double deltaY = y2 - y1;
-        double squareX = Math.pow(deltaX, 2);
-        double squareY = Math.pow(deltaY, 2);
-        double squareSum = squareX + squareY;
-        double rsl = Math.sqrt(squareSum);
-        return rsl;
+        return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     }
 
     public static void main(String[] args) {
