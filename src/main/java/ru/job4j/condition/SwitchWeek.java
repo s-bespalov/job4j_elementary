@@ -2,23 +2,32 @@ package ru.job4j.condition;
 
 public class SwitchWeek {
     public static String nameOfDay(int day) {
-        return switch (day) {
+        String mark;
+        switch (day) {
             case 1:
-                yield "Понедельник";
+                mark = "Понедельник";
+                break;
             case 2:
-                yield "Вторник";
+                mark = "Вторник";
+                break;
             case 3:
-                yield "Среда";
+                mark = "Среда";
+                break;
             case 4:
-                yield "Четверг";
+                mark = "Четверг";
+                break;
             case 5:
-                yield "Пятница";
+                mark = "Пятница";
+                break;
             case 6:
-                yield "Суббота";
+                mark = "Суббота";
+                break;
             case 7:
-                yield "Воскресенье";
+                mark = "Воскресенье";
+                break;
             default:
-                yield "Ошибка";
-        };
+                mark = "Ошибка";
+        }
+        return mark;
     }
 }
