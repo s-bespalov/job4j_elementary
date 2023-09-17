@@ -20,4 +20,12 @@ class ArrayCharTest {
         boolean result = ArrayChar.startsWith(word, pref);
         assertThat(result).isFalse();
     }
+
+    @Test
+    public void whenPrefixExceedWordThenFalse() {
+        char[] word = {'H', 'e', 'l', 'l', 'o'};
+        char[] pref = {'H', 'e', 'l', 'l', 'o', 'W', 'o', 'r', 'l', 'd'};
+        boolean result = ArrayChar.startsWith(word, pref);
+        assertThat(result).isFalse();
+    }
 }
